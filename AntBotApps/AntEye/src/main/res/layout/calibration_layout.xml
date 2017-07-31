@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/calibration_layout">
+
+
+    <insectsrobotics.imagemaipulations.Calibration.DrawImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newImageView"
+        android:layout_centerHorizontal="true"
+        android:scaleType="matrix"
+        android:layout_alignParentTop="false"
+        android:layout_above="@+id/next_step_text_view" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Inner_Circle_Button"
+        android:id="@+id/calibration_confirmation"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/help_button"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/calibration_confirmation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Place Circle in Image centre"
+        android:id="@+id/next_step_text_view"
+        android:layout_above="@+id/calibration_confirmation"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/help_button"
+        android:layout_toStartOf="@+id/help_button"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:id="@+id/mainLinearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select Visual System, Path Integrator and Combiner"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VS"
+                    android:id="@+id/VS_btn"
+                    android:layout_marginTop="5dp"
+                    android:onClick="onClick" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:visibility="gone"
+                    android:id="@+id/VS_radioGroup">
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Willshaw Network"
+                        android:id="@+id/VS1_radioBtn"
+                        android:checked="false"
+                        android:layout_marginTop="10dp" />
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Perfect Memory"
+                        android:id="@+id/VS2_radioBtn"
+                        android:checked="false"
+                        android:layout_marginTop="10dp" />
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Example 3"
+                        android:id="@+id/VS3_radioBtn"
+                        android:checked="false"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:textColor="#47000000" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PI"
+                    android:id="@+id/PI_btn"
+                    android:layout_marginTop="5dp"
+                    android:onClick="onClick" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:visibility="gone"
+                    android:id="@+id/PI_radioGroup">
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Trigonom. Integrator"
+                        android:id="@+id/PI1_radioBtn"
+                        android:checked="false"
+                        android:layout_marginTop="10dp" />
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Haferlach integrator"
+                        android:id="@+id/PI2_radioBtn"
+                        android:checked="false"
+                        android:layout_marginTop="10dp" />
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Example 3"
+                        android:id="@+id/PI3_radioBtn"
+                        android:checked="false"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:textColor="#47000000" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Combiner"
+                    android:id="@+id/Combiner_btn"
+                    android:layout_marginTop="5dp"
+                    android:onClick="onClick" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:visibility="gone"
+                    android:id="@+id/Combiner_radioGroup">
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Simple Combiner"
+                        android:id="@+id/Combiner1_radioBtn"
+                        android:checked="false"
+                        android:layout_marginTop="10dp" />
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weighted Combiner"
+                        android:id="@+id/Combiner2_radioBtn"
+                        android:checked="false"
+                        android:layout_marginTop="10dp" />
+
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Example 3"
+                        android:id="@+id/Combiner3_radioBtn"
+                        android:checked="false"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:textColor="#47000000" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/defaultSettingsLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Default Setting:"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="VS: Willshaw Learning"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="PI: Trigonometric Integrator"
+                android:id="@+id/textView16"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Combiner: Simple Combiner"
+                android:id="@+id/textView17"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/startBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Advanced Settings"
+            android:id="@+id/AdvancedSettingTextView"
+            android:layout_marginTop="10dp"
+            android:textColor="#254496"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+</RelativeLayout>

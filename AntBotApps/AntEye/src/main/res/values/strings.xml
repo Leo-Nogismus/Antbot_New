@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AntEye</string>
+    <string name="action_settings">Settings</string>
+    <string name="Inner_Circle_Button">Confirm Inner Circle Position</string>
+    <string name="Outer_Circle_Button">Confirm Outer Circle Position</string>
+    <string name="Corner_Confirmation">Confirm Corner Position</string>
+    <string name="error_pick_images">Invalid Number</string>
+    <string name="pick_image_button">Pick Image for Calibration</string>
+    <string name="LearnImage">Learn Image</string>
+</resources>

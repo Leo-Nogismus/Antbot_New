@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AntBotApps.iml" filepath="$PROJECT_DIR$/AntBotApps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AntEye/AntEye.iml" filepath="$PROJECT_DIR$/AntEye/AntEye.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Broadcast_Library/Broadcast_Library.iml" filepath="$PROJECT_DIR$/Broadcast_Library/Broadcast_Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CombinerApp/CombinerApp.iml" filepath="$PROJECT_DIR$/CombinerApp/CombinerApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PathIntegrationApp/PathIntegrationApp.iml" filepath="$PROJECT_DIR$/PathIntegrationApp/PathIntegrationApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SerialCommunicationApp/SerialCommunicationApp.iml" filepath="$PROJECT_DIR$/SerialCommunicationApp/SerialCommunicationApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VisualNavigationApp/VisualNavigationApp.iml" filepath="$PROJECT_DIR$/VisualNavigationApp/VisualNavigationApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openCVLibrary300/openCVLibrary300.iml" filepath="$PROJECT_DIR$/openCVLibrary300/openCVLibrary300.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--________________________________________SERVICES________________________________________-->
+    <item name="VisualNavigationService" type="string">
+        insectsrobotics.visualnavigationapp.VisualNavigationBackgroundServiceIntent
+    </item>
+
+    <item name="PathIntegratorService" type="string">
+        insectsrobotics.pathintegratorapp.PathIntegratorBackgroundServiceIntent
+    </item>
+
+    <item name="CombinerService" type="string">
+        insectsrobotics.antbotcombiner.CombinerBackgroundServiceIntent
+    </item>
+
+    <item name="SerialCommunicationService" type="string">
+        insectsrobotics.serialcommunicationapp.SerialConnectionBackgroundServiceIntent
+    </item>
+
+
+    <!--_______________________________________BROADCASTS_______________________________________-->
+    <!--The commented App on top is always the source of the Broadcast-->
+
+    <!--ANTEYE-->
+
+    <item name="AntEyeImageBroadcast" type="string">
+        insectsrobotics.imagemaipulations.IMAGE_BROADCAST
+    </item>
+    <item name="AntEyeServerImageBroadcast" type="string">
+        insectsrobotics.imagemaipulations.IMAGE_SERVER_BROADCAST
+    </item>
+    <item name="VisualNavigationModuleBroadcast" type="string">
+        insectsrobotics.imagemaipulations.VN_MODULE_BROADCAST
+    </item>
+    <item name="PathIntegratorModuleBroadcast" type="string">
+        insectsrobotics.imagemaipulations.PI_MODULE_BROADCAST
+    </item>
+    <item name="CombinerModuleBroadcast" type="string">
+        insectsrobotics.imagemaipulations.COMBINER_MODULE_BROADCAST
+    </item>
+    <item name="ServerConnectionBroadcast" type="string">
+        insectsrobotics.imagemaipulations.SERVER_CONNECTION_BROADCAST
+    </item>
+
+    <!--VISUAL NAVIGATION APPLICATION-->
+
+    <item name="VisualNavigationNumberOfImagesBroadcast" type="string">
+        insectsrobotics.visualnavigationapp.NUMBER_OF_IMAGES_BROADCAST
+    </item>
+    <item name="VisualNavigationStatusUpdateBroadcast" type="string">
+        insectsrobotics.visualnavigationapp.STATUS_UPDATE_BROADCAST
+    </item>
+    <item name="VisualNavigationErrorBroadcast" type="string">
+        insectsrobotics.visualnavigationapp.ERROR_BROADCAST
+    </item>
+
+
+    <!--PATH INTEGRATION APPLICATION-->
+
+    <item name="IntegratedVectorBroadcast" type="string">
+        insectsrobotics.pathintegrator.VECTOR_BROADCAST
+    </item>
+
+
+    <!--COMBINER APPLICATION-->
+
+    <item name="DecisionBroadcast" type="string">insectsrobotics.antbotcombiner.DECISION_BROADCAST
+    </item>
+    <item name="PathIntegratorRequestData" type="string">
+        instectsrobotics.antbotcombiner.REQUEST_PI_DATA_BROADCAST
+    </item>
+    <item name="VisualNavigationRequestData" type="string">
+        instectsrobotics.antbotcombiner.REQUEST_VN_DATA_BROADCAST
+    </item>
+
+    <!--SERIAL COMMUNICATION APP-->
+
+    <item name="WheelEncoderBroadcast" type="string">
+        insectsrobotics.serialcommunicationapp.WHEEL_ENCODER_BROADCAST
+    </item>
+    <item name="TaskExecutedBroadcast" type="string">
+        insectsrobotics.serialcommunicationapp.TASK_EXECUTED_BROADCAST
+    </item>
+    <item name="HomingRoutingBroadcast" type="string">
+        insectsrobotics.serialcommunicationapp.HOMING_ROUTING_BROADCAST
+    </item>
+    <item name="SerialConnectionEstablishedBroadcast" type="string">
+        insectsrobotics.serialcommunicationapp.SERIAL_CONNECTION_ESTABLISHED_BROADCAST
+    </item>
+    <item name="ServerConnectionEstablishedBroadcast" type="string">
+        insectsrobotics.serialcommunicationapp.SERVER_CONNECTION_ESTABLISHED_BROADCAST
+    </item>
+    <item name="LearnImageCommandBroadcast" type="string">
+        insectsrobotics.serialcommunicationapp.LEARN_IMAGE_COMMAND_BROADCAST
+    </item>
+    <item name="ResetLearningCommandBroadcast" type="string">
+        insectsrobotics.serialcommunicationapp.RESET_LEARNING_COMMAND_BROADCAST
+    </item>
+
+
+    <!--________________________________________________________________________________________-->
+
+
+    <!--Visual Navigation Broadcast Intent Keys-->
+    <string name="VisualAppRunning">VAProcessing</string>
+    <string name="VisualAppSuccessful">VASuccessful</string>
+    <string name="VisualAppBundle">VABundle</string>
+    <!--Bundle Keys-->
+    <string name="VABundleMethod">Method</string>
+    <string name="VABundleError">Error</string>
+
+
+    <!--AntEye Broadcast Intent Keys-->
+    <string name="AntEyeVNModuleSelection">VNModule</string>
+    <string name="AntEyePIModuleSelection">PIModule</string>
+    <string name="AntEyeCombinerModuleSelection">CombinerModule</string>
+    <string name="AntEyeImageArray">Image</string>
+    <string name="AntEyeTransmissionCode">Code</string>
+
+
+    <!--Selectable Module Names-->
+    <!--Visual Navigation Modules-->
+    <string name="VS1">WillshawModule</string>
+    <string name="VS2">PerfectMemoryModule</string>
+    <!--<string name="VS3">Example3Module</string>-->
+    <string name="NoVSModule">NoVisualSystemModuleSelected</string>
+
+    <!--Path Integration Modules-->
+    <string name="PI1">TrigonometricPathIntegratorModule</string>
+    <string name="PI2">HaferlachPathIntegratorModule</string>
+    <!--<string name="PI3">Example3Module</string>-->
+    <string name="NoPIModule">NoPathIntegrationModuleSelected</string>
+
+    <!--Combiner Modules-->
+    <string name="Combiner1">SimpleCombinerModule</string>
+    <string name="Combiner2">WeightedCombinerModule</string>
+    <!--<string name="Combiner3">Example3Module</string>-->
+    <string name="NoCombinerModule">NoCombinerModuleSelected</string>
+
+    <!--Intent Extras-->
+
+
+</resources>

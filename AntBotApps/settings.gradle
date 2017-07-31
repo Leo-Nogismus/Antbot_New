@@ -1,0 +1,2 @@
+include ':AntEye', ':VisualNavigationApp', ':SerialCommunicationApp', ':CombinerApp', ':PathIntegrationApp', ':Broadcast_Library'
+include ':openCVLibrary300'
